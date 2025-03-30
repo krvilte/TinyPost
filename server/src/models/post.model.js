@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
 
-const ThoughtsSchema = new Schema(
+const PostsSchema = new Schema(
   {
     userId: {
       type: Schema.Types.ObjectId,
@@ -30,5 +30,5 @@ const ThoughtsSchema = new Schema(
   { timestamps: true }
 );
 
-const Thoughts = model("Thoughts", ThoughtsSchema);
-export default Thoughts;
+const Post = model("Posts", PostsSchema);
+export default Post;
