@@ -12,9 +12,11 @@ app.use(express.urlencoded({ limit: "40kb", extended: false }));
 
 // Import routes
 import userRoutes from "./routes/user.routes.js";
+import thoughtsRoutes from "./routes/thoughts.routes.js";
 
 // Router declaration
 app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/thoughts", thoughtsRoutes);
 app.use(errorHandler);
 
 // Database connection and server start
